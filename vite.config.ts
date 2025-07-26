@@ -13,9 +13,15 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
-        name: "Vite PWA Project",
-        short_name: "Vite PWA Project",
-        theme_color: "#ffffff",
+        name: "KG Wine and Lounge",
+        short_name: "KG Wine",
+        description: "Premium wines and dining experience",
+        theme_color: "#D4AF37", // Gold color from design system
+        background_color: "#ffffff",
+        display: "standalone",
+        orientation: "portrait",
+        scope: "/",
+        start_url: "/",
         icons: [
           {
             src: "pwa-64x64.png",
@@ -40,6 +46,9 @@ export default defineConfig({
             purpose: "maskable",
           },
         ],
+        categories: ["food", "lifestyle", "entertainment"],
+        lang: "en",
+        dir: "ltr",
       },
     }),
   ],
