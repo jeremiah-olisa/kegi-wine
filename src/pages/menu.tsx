@@ -6,31 +6,22 @@ import { useSearchParams } from "react-router-dom";
 
 export default function MenuPage() {
   const [searchParams] = useSearchParams();
-  const selectedCategory = searchParams.get("category");
-
-  const filteredItems = selectedCategory
-    ? menuItems.filter((item) => item.category === selectedCategory)
+  const selectedCategory = searchParams.get('category');
+  
+  const filteredItems = selectedCategory 
+    ? menuItems.filter(item => item.category === selectedCategory)
     : menuItems;
 
-  const selectedCategoryData = categories.find(
-    (cat) => cat.id === selectedCategory
-  );
+  const selectedCategoryData = categories.find(cat => cat.id === selectedCategory);
 
   return (
     <MainLayout
-      title={selectedCategoryData ? selectedCategoryData.name : "Menu"}
-      subtitle={
-        selectedCategoryData
-          ? selectedCategoryData.description
-          : "Browse our delicious menu items"
-      }
+      title={selectedCategoryData ? selectedCategoryData.name : 'Menu'}
+      subtitle={selectedCategoryData ? selectedCategoryData.description : 'Browse our delicious menu items'}
     >
-      <div className="px-4 mt-6 space-y-4">
+      <div className="px-4 mt-6 space-y-4 animate-stagger">
         {filteredItems.map((item) => (
-          <div
-            key={item.id}
-            className="flex gap-4 p-4 rounded-lg bg-card shadow-sm"
-          >
+          <div key={item.id} className="flex gap-4 p-4 rounded-lg bg-card shadow-sm hover-lift">
             <img
               src={item.image}
               alt={item.name}
@@ -47,9 +38,7 @@ export default function MenuPage() {
                     <div className="flex items-center gap-1">
                       <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm font-medium">{item.rating}</span>
-                      <span className="text-xs text-muted-foreground">
-                        ({item.reviews})
-                      </span>
+                      <span className="text-xs text-muted-foreground">({item.reviews})</span>
                     </div>
                     {item.dietary.length > 0 && (
                       <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -58,21 +47,13 @@ export default function MenuPage() {
                     )}
                   </div>
                 </div>
-                <button className="p-1">
-                  <Heart
-                    className={`h-5 w-5 ${
-                      item.isFavorite
-                        ? "fill-red-500 text-red-500"
-                        : "text-muted-foreground"
-                    }`}
-                  />
+                <button className="p-1 hover-scale">
+                  <Heart className={`h-5 w-5 ${item.isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground'}`} />
                 </button>
               </div>
               <div className="flex items-center justify-between mt-3">
-                <span className="font-semibold text-lg">
-                  ${item.price.toFixed(2)}
-                </span>
-                <Button size="sm">Add to Cart</Button>
+                <span className="font-semibold text-lg">${item.price.toFixed(2)}</span>
+                <Button size="sm" className="hover-scale">Add to Cart</Button>
               </div>
             </div>
           </div>

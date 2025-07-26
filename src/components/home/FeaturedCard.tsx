@@ -9,7 +9,7 @@ export function FeaturedCard() {
   if (!featuredItem) return null;
 
   return (
-    <section className="mx-4 mt-6 rounded-lg bg-card shadow-md overflow-hidden">
+    <section className="mx-4 mt-6 rounded-lg bg-card shadow-md overflow-hidden hover-lift animate-scale-in">
       <div className="flex items-center">
         <img
           src={featuredItem.image}
@@ -22,7 +22,7 @@ export function FeaturedCard() {
               {featuredItem.rating}
             </span>
             <span className="text-xs text-muted-foreground">({featuredItem.reviews}+)</span>
-            <button className="ml-auto">
+            <button className="ml-auto hover-scale">
               <Heart className={`h-4 w-4 ${featuredItem.isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground'}`} />
             </button>
           </div>
@@ -32,7 +32,7 @@ export function FeaturedCard() {
           </p>
           <div className="flex items-center justify-between">
             <span className="font-semibold text-lg">${featuredItem.price.toFixed(2)}</span>
-            <Button size="sm">Order</Button>
+            <Button size="sm" className="hover-scale">Order</Button>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="h-8 w-8"
+      className="h-8 w-8 hover-scale animate-scale-in"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (

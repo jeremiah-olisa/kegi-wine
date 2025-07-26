@@ -7,12 +7,12 @@ export function FastestItemsList() {
   const fastestItems = getFastestItems();
 
   return (
-    <div className="px-4 mt-4">
+    <div className="px-4 mt-4 animate-stagger">
       <div className="flex gap-4 overflow-x-auto pb-4">
         {fastestItems.map((item) => (
           <div
             key={item.id}
-            className="flex-shrink-0 w-48 rounded-lg bg-card shadow-md overflow-hidden"
+            className="flex-shrink-0 w-48 rounded-lg bg-card shadow-md overflow-hidden hover-lift"
           >
             <div className="relative">
               <img
@@ -28,7 +28,7 @@ export function FastestItemsList() {
                   ⭐
                 </span>
               </div>
-              <button className="absolute top-2 right-2">
+              <button className="absolute top-2 right-2 hover-scale">
                 <Heart className={`h-4 w-4 ${item.isFavorite ? 'fill-red-500 text-red-500' : 'text-white'}`} />
               </button>
             </div>
@@ -39,7 +39,7 @@ export function FastestItemsList() {
               </p>
               <div className="flex items-center justify-between">
                 <span className="font-semibold text-sm">${item.price.toFixed(2)}</span>
-                <Button size="sm" className="text-xs px-2 py-1">
+                <Button size="sm" className="text-xs px-2 py-1 hover-scale">
                   Order
                 </Button>
               </div>
