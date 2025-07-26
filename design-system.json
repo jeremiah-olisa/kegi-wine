@@ -1,0 +1,187 @@
+{
+  "theme": "light",
+  "colors": {
+    "primary": {
+      "gold": "#F9CC21",
+      "firebrick": "#C32B2B"
+    },
+    "neutral": {
+      "black": "#000000",
+      "gray": "#B6B6B6",
+      "gainsboro": "#E6E5E5",
+      "white": "#FFFFFF"
+    },
+    "text": {
+      "default": "#000000",
+      "secondary": "#B6B6B6",
+      "placeholder": "#B6B6B6",
+      "inverted": "#FFFFFF"
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "light": "#F8F8F8"
+    },
+    "border": {
+      "default": "#E6E5E5"
+    },
+    "darkMode": {
+      "primary": {
+        "gold": "#FFDA47",
+        "firebrick": "#E04C4C"
+      },
+      "neutral": {
+        "black": "#FFFFFF",
+        "gray": "#8A8A8A",
+        "gainsboro": "#333333",
+        "white": "#1A1A1A"
+      },
+      "text": {
+        "default": "#FFFFFF",
+        "secondary": "#8A8A8A",
+        "placeholder": "#8A8A8A",
+        "inverted": "#000000"
+      },
+      "background": {
+        "default": "#121212",
+        "light": "#1A1A1A"
+      },
+      "border": {
+        "default": "#333333"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": "Lufga, sans-serif"
+    },
+    "fontWeights": {
+      "regular": 400,
+      "medium": 500,
+      "semiBold": 600
+    },
+    "fontSizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem"
+    },
+    "lineHeights": {
+      "tight": 1.25,
+      "normal": 1.5,
+      "relaxed": 1.75
+    },
+    "headings": {
+      "h1": {
+        "fontSize": "4xl",
+        "fontWeight": "semiBold",
+        "lineHeight": "tight",
+        "color": "text.default"
+      },
+      "h2": {
+        "fontSize": "3xl",
+        "fontWeight": "semiBold",
+        "lineHeight": "tight",
+        "color": "text.default"
+      },
+      "h3": {
+        "fontSize": "2xl",
+        "fontWeight": "semiBold",
+        "lineHeight": "tight",
+        "color": "text.default"
+      },
+      "h4": {
+        "fontSize": "xl",
+        "fontWeight": "semiBold",
+        "lineHeight": "normal",
+        "color": "text.default"
+      }
+    },
+    "body": {
+      "base": {
+        "fontSize": "base",
+        "fontWeight": "regular",
+        "lineHeight": "normal",
+        "color": "text.default"
+      },
+      "small": {
+        "fontSize": "sm",
+        "fontWeight": "regular",
+        "lineHeight": "normal",
+        "color": "text.secondary"
+      }
+    }
+  },
+  "borders": {
+    "radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "full": "9999px"
+    },
+    "width": {
+      "default": "1px"
+    },
+    "color": {
+      "default": "colors.border.default"
+    }
+  },
+  "inputs": {
+    "backgroundColor": "colors.neutral.white",
+    "borderColor": "colors.border.default",
+    "borderWidth": "borders.width.default",
+    "borderRadius": "borders.radius.md",
+    "textColor": "colors.text.default",
+    "placeholderColor": "colors.text.placeholder",
+    "padding": {
+      "y": "0.75rem",
+      "x": "1rem"
+    }
+  },
+  "buttons": {
+    "primary": {
+      "backgroundColor": "colors.primary.gold",
+      "textColor": "colors.neutral.black",
+      "borderRadius": "borders.radius.md",
+      "fontWeight": "semiBold",
+      "padding": {
+        "y": "0.75rem",
+        "x": "1.5rem"
+      },
+      "hover": {
+        "backgroundColor": "darken(colors.primary.gold, 10%)"
+      }
+    },
+    "secondary": {
+      "backgroundColor": "transparent",
+      "borderColor": "colors.neutral.gray",
+      "borderWidth": "borders.width.default",
+      "textColor": "colors.text.default",
+      "borderRadius": "borders.radius.md",
+      "fontWeight": "regular",
+      "padding": {
+        "y": "0.75rem",
+        "x": "1.5rem"
+      },
+      "hover": {
+        "backgroundColor": "colors.neutral.gainsboro"
+      }
+    }
+  },
+  "spacing": {
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "3rem"
+  },
+  "shadows": {
+    "sm": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+    "md": "0px 4px 8px rgba(0, 0, 0, 0.1)",
+    "lg": "0px 8px 16px rgba(0, 0, 0, 0.15)"
+  }
+}
