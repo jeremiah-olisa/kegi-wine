@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { getFastestItems } from "@/lib/hooks/use-food-data";
 import { Heart } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export function FastestItemsList() {
   const fastestItems = getFastestItems();

@@ -1,10 +1,13 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
-import { CreditCard, Plus, Wallet, History, Settings } from "lucide-react";
+import { CreditCard, Plus, Wallet, History } from "lucide-react";
 
 export default function WalletPage() {
   return (
-    <MainLayout title="Wallet" subtitle="Manage your payment methods and balance">
+    <MainLayout
+      title="Wallet"
+      subtitle="Manage your payment methods and balance"
+    >
       <div className="px-4 mt-6 space-y-6">
         {/* Balance Card */}
         <div className="rounded-lg bg-gradient-to-r from-primary to-primary/80 p-6 text-white">
@@ -13,7 +16,9 @@ export default function WalletPage() {
             <Wallet className="h-6 w-6" />
           </div>
           <div className="text-3xl font-bold mb-2">$245.67</div>
-          <p className="text-primary-foreground/80">Last updated: 2 minutes ago</p>
+          <p className="text-primary-foreground/80">
+            Last updated: 2 minutes ago
+          </p>
         </div>
 
         {/* Quick Actions */}
@@ -22,7 +27,10 @@ export default function WalletPage() {
             <Plus className="h-5 w-5" />
             <span>Add Money</span>
           </Button>
-          <Button variant="outline" className="flex items-center gap-2 p-4 h-auto">
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 p-4 h-auto"
+          >
             <CreditCard className="h-5 w-5" />
             <span>Add Card</span>
           </Button>
@@ -40,7 +48,9 @@ export default function WalletPage() {
                   <p className="text-sm text-muted-foreground">Expires 12/25</p>
                 </div>
               </div>
-              <Button variant="ghost" size="sm">Edit</Button>
+              <Button variant="ghost" size="sm">
+                Edit
+              </Button>
             </div>
             <div className="flex items-center justify-between p-4 rounded-lg bg-card">
               <div className="flex items-center gap-3">
@@ -50,7 +60,9 @@ export default function WalletPage() {
                   <p className="text-sm text-muted-foreground">Expires 08/26</p>
                 </div>
               </div>
-              <Button variant="ghost" size="sm">Edit</Button>
+              <Button variant="ghost" size="sm">
+                Edit
+              </Button>
             </div>
           </div>
         </div>
@@ -59,7 +71,11 @@ export default function WalletPage() {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-lg">Recent Transactions</h3>
-            <Button variant="ghost" size="sm" className="flex items-center gap-1">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="flex items-center gap-1"
+            >
               <History className="h-4 w-4" />
               View All
             </Button>
@@ -72,7 +88,9 @@ export default function WalletPage() {
                 </div>
                 <div>
                   <p className="font-medium">Classic Burger</p>
-                  <p className="text-sm text-muted-foreground">Today, 2:30 PM</p>
+                  <p className="text-sm text-muted-foreground">
+                    Today, 2:30 PM
+                  </p>
                 </div>
               </div>
               <span className="font-semibold text-destructive">-$12.99</span>
@@ -84,7 +102,9 @@ export default function WalletPage() {
                 </div>
                 <div>
                   <p className="font-medium">Cabernet Sauvignon</p>
-                  <p className="text-sm text-muted-foreground">Yesterday, 8:15 PM</p>
+                  <p className="text-sm text-muted-foreground">
+                    Yesterday, 8:15 PM
+                  </p>
                 </div>
               </div>
               <span className="font-semibold text-destructive">-$45.00</span>
@@ -96,7 +116,9 @@ export default function WalletPage() {
                 </div>
                 <div>
                   <p className="font-medium">Wallet Top-up</p>
-                  <p className="text-sm text-muted-foreground">Dec 15, 10:30 AM</p>
+                  <p className="text-sm text-muted-foreground">
+                    Dec 15, 10:30 AM
+                  </p>
                 </div>
               </div>
               <span className="font-semibold text-green-600">+$100.00</span>
@@ -106,4 +128,4 @@ export default function WalletPage() {
       </div>
     </MainLayout>
   );
-} 
+}
