@@ -7,6 +7,7 @@ import FavoritesPage from "@/pages/favorites";
 import ProfilePage from "@/pages/profile";
 import WalletPage from "@/pages/wallet";
 import CartPage from "@/pages/cart";
+import { PWAInstallPrompt } from "@/components/app/PWAInstallPrompt";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/wallet" element={<WalletPage />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
+        <PWAInstallPrompt />
       </Router>
     </ThemeProvider>
   );
