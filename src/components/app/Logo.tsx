@@ -16,7 +16,7 @@ export function Logo({ className = "", width = 32, height = 32 }: LogoProps) {
     >
       <rect width="200" height="100" fill="currentColor" opacity="0.1" />
       
-      {/* KeGi Text */}
+      {/* KG Text */}
       <text
         x="100"
         y="55"
@@ -27,7 +27,7 @@ export function Logo({ className = "", width = 32, height = 32 }: LogoProps) {
         fontSize="40"
         fill="currentColor"
       >
-        KeGi
+        KG
       </text>
       
       {/* Wine Glass Icon */}

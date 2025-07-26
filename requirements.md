@@ -1,17 +1,17 @@
-# KeGi Wines and Lounge - Product Requirements Document
+# KG Wines and Lounge - Product Requirements Document
 
-This document outlines the requirements for the **KeGi Wines and Lounge** food menu application, providing a guide for its development using React with TypeScript.
+This document outlines the requirements for the **KG Wines and Lounge** food menu application, providing a guide for its development using React with TypeScript.
 
 ## 1. Introduction
 
-KeGi Wines and Lounge is a digital food menu application designed to enhance the customer ordering experience. It will allow customers to browse various food and drink categories, view item details, and place orders which can then be easily retrieved by staff via a QR code system.
+KG Wines and Lounge is a digital food menu application designed to enhance the customer ordering experience. It will allow customers to browse various food and drink categories, view item details, and place orders which can then be easily retrieved by staff via a QR code system.
 
 ## 2. Goals
 
 - Provide an intuitive and user-friendly digital menu interface.
 - Streamline the ordering process for customers.
 - Enable efficient order retrieval for staff using QR codes.
-- Improve overall customer satisfaction and operational efficiency for KeGi Wines and Lounge.
+- Improve overall customer satisfaction and operational efficiency for KG Wines and Lounge.
 
 ## 3. Core Features
 
@@ -41,14 +41,14 @@ KeGi Wines and Lounge is a digital food menu application designed to enhance the
 
 ## 5. User Journey Map
 
-This map illustrates a typical customer's interaction with the KeGi Wines and Lounge application.
+This map illustrates a typical customer's interaction with the KG Wines and Lounge application.
 
-**Persona:** A customer at KeGi Wines and Lounge who wants to browse the menu and place an order.
+**Persona:** A customer at KG Wines and Lounge who wants to browse the menu and place an order.
 
 | Step | Action (User) | System Response / Screen | Notes |
 |------|--------------|-------------------------|-------|
 | 1 | Arrives at Lounge / Scans Table QR | (Not part of this app's scope directly, but triggers app access) | Assumes a QR code on the table or a direct URL leads to the app. |
-| 2 | Launches KeGi Wines and Lounge App | Home/Category Selection Screen | Displays main categories (Wines, Snacks, etc.). |
+| 2 | Launches KG Wines and Lounge App | Home/Category Selection Screen | Displays main categories (Wines, Snacks, etc.). |
 | 3 | Selects a Category (e.g., "Wines") | Menu List Screen (Wines) | Shows all items within the "Wines" category. |
 | 4 | Browses Items / Scrolls Down | Updates menu list as user scrolls. | User can see item names, prices, and brief descriptions. |
 | 5 | Taps on an Item (e.g., "Merlot") | Item Detail Screen | Displays full description, price, image, and "Add to Cart" button. |
@@ -65,7 +65,7 @@ This map illustrates a typical customer's interaction with the KeGi Wines and Lo
 Based on the user journey, the following screens will be required:
 
 ### Home/Category Selection Screen
-- App logo/name: "KeGi Wines and Lounge"
+- App logo/name: "KG Wines and Lounge"
 - List of main menu categories (e.g., Wines, Cocktails, Snacks, Main Courses).
 - Visually appealing layout with clear category names and possibly icons/images.
 - A "Cart" icon, possibly with a count of items in the cart.
@@ -129,7 +129,7 @@ This section details the primary React components that will likely be needed for
 ### 9.1. Home/Category Selection Screen
 
 - **HomeScreen (Page Component):** The main container for this view.
-- **AppHeader:** Displays "KeGi Wines and Lounge" logo/name and potentially a global cart icon.
+- **AppHeader:** Displays "KG Wines and Lounge" logo/name and potentially a global cart icon.
   - Logo (or AppName)
   - CartIcon (with itemCount prop)
 - **CategoryList:** Renders a list of CategoryCard components.

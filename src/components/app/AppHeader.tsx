@@ -9,7 +9,7 @@ export function AppHeader() {
       <Link to="/" className="flex items-center gap-2 hover-scale transition-opacity">
         <Logo className="h-8 w-8 text-primary" />
         <span className="font-semibold text-lg tracking-tight">
-          KeGi Wines and Lounge
+          KG Wines and Lounge
         </span>
       </Link>
       <div className="flex items-center gap-3">
